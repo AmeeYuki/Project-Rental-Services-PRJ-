@@ -1,0 +1,378 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 90px;
+    width: 120px;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #00B4D8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar li a i {
+    color: black;
+}
+.submenu {
+    font-size: smaller;
+}
+nav {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-bottom: 310px;
+    float: left;
+    height: 100%;
+    /* Set the height to 100% */
+    box-sizing: border-box;
+    display: flex;
+    /* Add flexbox display */
+    flex-direction: column;
+    /* Stack the inner items vertically */
+    justify-content: flex-start;
+    /* Align items at the start */
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 15px 0;
+}
+
+.box {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    width: calc(100% - 260px);
+    height: 100%;
+    /* Set the height to 100% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    /* Add flexbox display */
+    flex-direction: column;
+    /* Stack the inner items vertically */
+    justify-content: flex-start;
+    /* Align items at the start */
+    border-radius: 10px;
+}
+
+.box2 {
+    width: 92%;
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.box2 h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content {
+    width: 55%;
+}
+
+.box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: #fff;
+    border-color: red;
+    font-size: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    table-layout: fixed;
+    height: 30px;
+    border-spacing: 0 15px;
+}
+
+thead {
+    background-color: white;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+th,
+td {
+    border: none;
+}
+
+td {
+    padding: 20px;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-container button {
+    background-color: #00abff;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.option-container label {
+    padding: 8px 12px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+
+.option-container input[type="radio"] {
+    display: none;
+}
+
+.option-container input[type="radio"]:checked+label {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3000px;
+    margin: 20px auto;
+}
+
+.section {
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#option1:checked+label {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#option2:checked+label {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#option3:checked+label {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#option4:checked+label {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#option5:checked+label {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#option6:checked+label {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box2 {
+    width: 98%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: #fff;
+    border-color: red;
+    font-size: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        margin-right: 0;
+        margin-top: 0;
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section {
+        margin-bottom: 10px;
+    }
+
+    .box2 {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .logout {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

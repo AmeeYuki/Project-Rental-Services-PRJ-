@@ -1,0 +1,253 @@
+.logo {
+    height: 90px;
+    width: 120px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #00B4D8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar li a i {
+    color: black;
+}
+.address{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: blue;
+    font-size: 15px;
+}
+.impress{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.add {
+    margin-bottom: 0px;
+}
+.abc {
+    color: chartreuse;
+}
+
+.picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left{
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+.left img{
+    width: 100%;
+    height: auto;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+.right-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.right-img img{
+    width: 100%;
+    height: auto;
+}
+
+.infor {
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-size: 16px;
+line-height: 29px;
+word-break: break-word;
+}
+.populist {
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .navbar1 {
+        display: flex;
+        flex-direction: column;
+        margin:0 50px 10px;
+        padding: 0;
+        align-items: flex-start;
+      }
+      
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #00B4D8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 30px;
+}
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.navbar2 li {
+    list-style: none;
+    padding: 0 5px;
+
+}
+.logo2 {
+    height: 50px;
+    width: 50px;
+}
+.button {
+    background-color: #00B4D8;
+    color: white;
+    padding: 15px 150px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.button a {
+    text-decoration:  none;
+    color: #f2f2f2;
+}
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .box h3 {
+    margin-top: 0;
+  }
+  
+  .readmore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #0077cc;
+  }
+  @media only screen and (max-width: 768px) {
+    .header {
+      padding: 20px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      padding: 10px 0;
+    }
+  
+    .navbar li a {
+      font-size: 14px;
+    }
+  
+    .add {
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+  
+    .picture {
+      flex-direction: column;
+    }
+  
+    .left {
+      width: 100%;
+    }
+  
+    .right {
+      width: 100%;
+    }
+  
+    .right-img {
+      width: 100%;
+    }
+  
+    .right-img img {
+      width: 100%;
+    }
+  
+    .infor {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .populist {
+      flex-wrap: wrap;
+    }
+  
+    .navbar1 {
+      margin: 0;
+      align-items: center;
+    }
+  
+    .body {
+      padding: 20px;
+    }
+  
+    .navbar2 {
+      float: none;
+      margin-top: 10px;
+    }
+  
+    .logo2 {
+      height: 30px;
+      width: 30px;
+    }
+  
+    .button {
+      padding: 15px 30px;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .box {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
